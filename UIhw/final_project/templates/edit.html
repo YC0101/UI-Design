@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'edit.js') }}"></script>
+
+
+<script>
+    let data = {{data|tojson}} 
+    console.log(data)
+    let key = {{key|tojson}}
+    console.log(key)
+    
+</script>
+
+<div id="dialogdis" title="Are you sure to discard???">
+    <p><span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>These changes will be discrad without saving. Are you sure?</p>
+</div>
+
+
+<div id = "detailcontainer">
+    <div id = "enginetitles"> Edit data</div>
+    <div id = "addsuc"></div>
+    <div id = "detailcontainer">
+        <div>Please fill in every information.</div>
+        <div>For unknown information, type in "None".</div>
+        <div id='reminder'>You are currently editting </div>
+        <div>
+            <div>
+                <span class = "element">Title:</span>
+                <input id="inputtitle" class = "addinput" type="text" >
+                <span id ="w1"></span>
+            </div>
+
+            <div>
+                <span class = "element">Image:</span>
+                <input id="inputimg" class = "addinput" type="text" placeholder="Url for image">
+                <span id ="w2"></span>
+            </div>
+
+            <div>
+                <span class = "element">Directors:</span>
+                <input id="inputdir" class = "addinput" type="text" placeholder="directors separated by ','">
+                <span id ="w3"></span>
+            </div>
+
+            <div>
+                <span class = "element">Episodes:</span>
+                <input id="inputepi" class = "addinput" type="text" placeholder=" #episodes, must be a number">
+                <span id ="w4"></span>
+            </div>
+
+            <div>
+                <span class = "element">Stars:</span>
+                <input class = "addinput" id="inputstars" type="text" placeholder="stars separated by ','">
+                <span id ="w5"></span>
+            </div>
+
+            <div>
+                <span class = "element">Score:</span>
+                <input id="inputscore" class = "addinput" type="text" placeholder=" score (1-10)">
+                <span id ="w6"></span>
+            </div>
+
+            <div>
+                <span class = "element">Genres:</span>
+                <input id="inputgenres" class = "addinput" type="text" placeholder="genres separated by ','">
+                <span id ="w7"></span>
+            </div>
+
+            <div>
+                <span class = "element">Summary:</span><br>
+                <span class = "element"></span>
+                <textarea id="inputsum" class = "addinput" type="text" placeholder="Summary..." cols="40" rows="5"></textarea>
+                <span id ="w8"></span>
+            </div>
+
+            <button id = "editsubmit">Submit</button>
+            <button id = "editdiscard">Discard Changes</button>
+        </div>
+    </div>
+    
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,45 @@
+#blank{
+    width: 200px;
+    display:inline-block;
+}
+
+.titles{
+    font-weight: bold;
+    font-size:20px;
+    margin-top: 5px;
+}
+
+#popularlist{
+    margin-left: 10px;
+}
+
+#container{
+    margin-left: 0px;
+    margin-top: 18px;
+    font-size: 15px;
+}
+
+#detailcontainer{
+    margin-left:10px;
+    margin-right:20px;
+}
+
+img{
+    max-height: 230px;
+}
+
+#stars,#summary,#director,#genres{
+    margin-left:20px;
+}
+
+.searchinput{
+    white-space: pre-line;
+}
+
+#enginetitles{
+    font-weight: bold;
+    font-size:20px;
+    margin-top: 5px;
+    color:rgb(58, 158, 125);
+}
+

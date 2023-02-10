@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+
+    <script type="text/javascript" src="{{ url_for('static', filename = 'log_sales.js') }}"></script>
+   
+    <script>
+        let clients = {{clients|tojson}} 
+        console.log(clients)
+        let sales = {{sales|tojson}}
+        console.log(sales)
+    </script>
+
+
+
+    <div id="CPItitle">Columbia Paper Infinity</div>
+    <div id = "warning">
+
+    </div>
+    <div id = "container">
+        <span>Log your paper sales: </span>
+        <input id="inputclient" type="text" placeholder="client">
+        <input id="inputreams" type="text" placeholder="#Reams">
+        <button id="submit">Submit</button>
+    </div>
+
+    <div id = "updates">
+
+    </div>
+
+
+
+{% endblock %}

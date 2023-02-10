@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <!-- JQuery -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!-- bootstrap same as before -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        
+        <style>
+            #CPItitle{
+                background-color: lightgray;
+                margin-left: 120px;
+                margin-right: 120px;  
+                padding-left: 30px;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                font-size: 40px;
+            }
+
+            #container{
+                margin-left: 120px;
+                margin-top: 18px;
+                font-size: 15px;
+            }
+
+            #warning{
+                margin-left: 120px;
+                margin-top: 18px;
+                font-size: 15px;
+                color:red;
+            }
+
+            #inputclient{
+                margin-left:10px;
+                border: 1px solid #a39797;
+                width: 30%;
+            }
+
+            #inputreams{
+                margin-left:10px;
+                border: 1px solid #a39797;
+                width: 20%;
+            }
+
+            #submit{
+                margin-left:10px;
+                border-radius: 4px;
+                background-color: rgb(59, 143, 212);
+                color: white;
+                border: none;
+                font-size: 18px;
+            }
+
+            #submit:hover{
+                border-radius: 4px;
+                background-color: rgb(28, 75, 114);
+                color: white;
+            }
+
+            #updates{
+                margin-left: 120px;
+                margin-top: 18px;
+                font-size: 15px;
+                
+            }
+
+            .newclient{
+                width: 30%;
+                display:inline-block;
+            }
+
+            .newreams{
+                width: 20%;
+                display:inline-block;
+            }
+
+            .user{
+                width: 17%;
+                display:inline-block;
+
+            }
+
+            .delete{
+                margin-left:10px;
+                border-radius: 4px;
+                background-color: rgb(255, 208, 53);
+                color: rgb(0, 0, 0);
+                border: none;
+                font-size: 18px;
+            }
+
+            #delete:hover{
+                background-color: rgb(219, 168, 0);
+            }
+        </style>
+
+        <script src="log_sales.js">
+        </script>
+
+    </head>
+
+    <body>
+        <div id="CPItitle">Columbia Paper Infinity</div>
+
+        <div id = "warning">
+
+        </div>
+
+        <div id = "container">
+            <span>Log your paper sales: </span>
+            <input id="inputclient" type="text" placeholder="client">
+            <input id="inputreams" type="text" placeholder="#Reams">
+            <button id="submit">Submit</button>
+        </div>
+
+        
+        <div id = "updates">
+
+        </div>
+    </body>
+</html> 

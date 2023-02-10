@@ -1,0 +1,207 @@
+#blank{
+    width: 200px;
+    display:inline-block;
+}
+
+.titles{
+    font-weight: bold;
+    font-size:20px;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+
+.showtitles{
+    font-weight: bold;
+    padding-top: 10px;
+    font-size:27px;
+    margin-top: 5px;
+}
+
+#popularlist{
+    margin-left: 10px;
+}
+
+#container{
+    margin-left: 0px;
+    margin-top: 18px;
+    font-size: 15px;
+}
+
+#detailcontainer{
+    margin-left:10px;
+    margin-right:20px;
+}
+
+
+#stars,#summary,#director,#genres{
+    margin-left:20px;
+}
+
+.searchinput{
+    white-space: pre-line;
+}
+
+#enginetitles{
+    font-weight: bold;
+    font-size:20px;
+    margin-top: 5px;
+    color:rgb(7, 32, 24);
+}
+
+#addsuc{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:rgb(145, 37, 233);
+}
+
+.count{
+    font-size:15px;
+    color:rgb(156, 165, 26);
+}
+
+#warnings{
+    margin-top: 10px;
+    font-size: 15px;
+    color:red;
+}
+
+.element{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 90px;
+    display:inline-block;
+}
+
+input{
+    width: 220px;
+}
+
+#w1, #w2, #w3, #w4, #w5, #w6, #w7, #w8{
+    margin-left: 30px;
+    color: red;
+    font-weight: bold;
+}
+
+#addsubmit{
+    margin-top: 15px;
+    margin-left:400px;
+    border-radius: 4px;
+    background-color: rgb(59, 143, 212);
+    margin-bottom: 20px;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+#editsubmit{
+    margin-top: 15px;
+    margin-left:400px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: rgb(59, 143, 212);
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+#editdiscard{
+    margin-top: 15px;
+    margin-left:10px;
+    border-radius: 4px;
+    background-color: rgb(59, 143, 212);
+    margin-bottom: 20px;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+#addsubmit, #editsubmit:hover{
+    border-radius: 4px;
+    background-color: rgb(28, 75, 114);
+    color: white;
+}
+
+#editdiscard:hover{
+    border-radius: 4px;
+    background-color: rgb(28, 75, 114);
+    color: white;
+}
+
+.smallpic{
+    margin-left: 10px;
+    height: 90%; 
+    width: 90%; 
+    text-align: center;  
+}
+
+.textali{
+    text-align: center;
+    margin-top: -35px;
+}
+
+.container1{
+    padding:10px;
+    width:850px;
+    height:350px;
+    margin: 10px;
+    background-color: rgb(244, 247, 245);
+}
+
+body{
+    background-color: rgb(231, 238, 231);
+}
+
+.showimg{
+    height:600px;
+    width:500px;    
+}
+
+img{
+    max-width: 600px;
+    max-height: 350px;
+    
+}
+
+.side{
+    margin-top: 50px;
+}
+.bold{
+    font-weight: bold;
+}
+
+.color{
+    color:rgb(145, 37, 233);
+}
+
+.scorepattern{
+    color:rgb(28, 75, 114);
+    font-size: 27px;
+}
+
+.backgroundlight{
+    background-color: rgb(244, 245, 244);
+}
+
+.backgrounddark{
+    background-color: rgb(53, 56, 53);
+}
+
+.editbut{
+    border: none;
+    color: white;
+    padding: 5px 13px;
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 180px;
+    cursor: pointer;
+    background-color: rgb(135, 170, 135);
+}
+
+.darkgray{
+    color: gray;
+}
+
+.darkergray{
+    color:rgb(77, 77, 77);
+}

@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'welcome.js') }}"></script>
+
+<script>
+    
+
+</script>
+
+<div class = "ycintro">Flowers are a common gift that you can get someone for special occasions, or just to brighten up their day. Learn how to make the flowers you gift meaningful and appropriate for different cultures! </div>
+<div class = "yccontainer1">
+    <div class = "row">
+        <div id="ycblock1" class = "col-md-6">
+            <div class = "ycpinkblock">Start Learning</div>
+            <div class= "ycmiddle">Choose a culture!
+            </div>
+            <div class="ycmiddle">
+                <div>
+                    <button>Culture 1</button>
+                    <button>Culture 2</button>
+                </div>
+                <div>
+                    <button>Culture 3</button>
+                    <button>Culture 4</button>
+                </div>
+            </div>
+        </div>
+        <div id="ycblock1" class = "col-md-6">
+            <div class = "ycpinkblock">Test yourself</div>
+            <div class= "ycmiddle">Confident in your knowledge of flower meanings? 
+                Go directly to the quiz!
+            </div>
+            <div class="ycmiddle">
+                <div>
+                    <button>Start Quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
+</div>
+{% endblock %}

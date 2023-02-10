@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'welcome.js') }}"></script>
+
+<script>
+    
+
+</script>
+<div class = "ycculture">Culture 1</div>
+<div class = "ycintro">Flowers are put your content here put your content here put your content here. </div>
+<div class = "yccontainer1">
+    <div class = "row">
+        <div class = "col-md-4">
+            <div class = "ycdragblock">dragbox here</div>
+            
+        </div>
+        <div class = "col-md-4">
+            <div class = "ycdragblock">dragbox here</div>
+
+        </div>
+        <div class = "col-md-4">
+            <div class = "ycdragblock">dragbox here</div>
+            
+        </div>
+    </div>
+    
+    <hr>
+</div>
+<div class = "ycbottombar"> 
+    <div class = "row">
+        <div class = "col-md-2">
+            <div class = "ycb">Culture previous</div>
+            
+        </div>
+        <div class = "col-md-8">
+            <div class = "ycb">Check your knowledge on this lesson.</div>
+            <button>Click Here.</button>
+        </div>
+        <div class = "col-md-2">
+            <button>Culture next</button>
+            
+        </div>
+    </div>
+</div>
+{% endblock %}

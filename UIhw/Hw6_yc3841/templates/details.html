@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'show_detail.js') }}"></script>
+
+
+<script>
+    let data = {{data|tojson}} 
+    console.log(data)
+    let key = {{key|tojson}}
+    console.log(key)
+    
+</script>
+
+<div id = "detailcontainer">
+    <div id = "showtitle" class="titles"></div>
+    <div id = "showimg"></div>
+    <div id = "score"></div>
+    <div>Summary:</div>
+    <div id = "summary"></div>
+    <div>Stars:</div>
+    <div id = "stars"></div>
+    <div>Director(s):</div>
+    <div id = "director"></div>
+    <div>Genres:</div>
+    <div id = "genres"></div>
+
+</div>
+
+
+{% endblock %}

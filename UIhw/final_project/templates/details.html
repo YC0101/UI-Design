@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'culture_detail.js') }}"></script>
+
+
+<script>
+    let data = {{data|tojson}} 
+    console.log(data)
+    let key = {{key|tojson}}
+    console.log(key)
+    
+</script>
+
+<div id = "detailcontainer">
+
+    <div class = "ycdetailtitle"><img src="">Flower 1</div>
+
+    <div class="ycdetailcontainer">
+        <div class = "ycsubtitle">
+            Meanings and Origins
+        </div>
+        <div class = "ycsubcontent">
+            update data here.
+        </div>
+
+        <div  class = "ycsubtitle">
+            Colors
+        </div>
+        <div class = "ycsubcontent">
+            update data here.
+        </div>
+        
+    </div>
+    <hr>
+    <div class = "ycbottombar">
+        <button>Back</button>
+    </div>
+
+</div>
+
+
+{% endblock %}

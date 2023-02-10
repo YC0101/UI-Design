@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'japanese_show.js') }}"></script>
+
+<script>
+    let data = {{data|tojson}} 
+    console.log(data)
+    let popular = {{popular|tojson}}
+    console.log(popular)
+
+</script>
+
+<div class = "titles">Most Popular Japanese TV shows this week:</div>
+<div id = "popularlist"></div>
+{% endblock %}

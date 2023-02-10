@@ -1,0 +1,77 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'add.js') }}"></script>
+
+
+<script>
+    let current_id = {{current_id|tojson}} 
+    console.log(current_id)
+ 
+</script>
+
+<div id = "detailcontainer">
+    <div id = "enginetitles"> Add a new show to data</div>
+    <div id = "addsuc"></div>
+    <div id = "detailcontainer">
+        <div>Please fill in every information.</div>
+        <div>For unknown information, type in "None".</div>
+        <div>
+            <div>
+                <span class = "element">Title:</span>
+                <input id="inputtitle" class = "addinput" type="text" placeholder="title">
+                <span id ="w1"></span>
+            </div>
+
+            <div>
+                <span class = "element">Image:</span>
+                <input id="inputimg" class = "addinput" type="text" placeholder="Url for image">
+                <span id ="w2"></span>
+            </div>
+
+            <div>
+                <span class = "element">Directors:</span>
+                <input id="inputdir" class = "addinput" type="text" placeholder="directors separated by ','">
+                <span id ="w3"></span>
+            </div>
+
+            <div>
+                <span class = "element">Episodes:</span>
+                <input id="inputepi" class = "addinput" type="text" placeholder=" #episodes, must be a number">
+                <span id ="w4"></span>
+            </div>
+
+            <div>
+                <span class = "element">Stars:</span>
+                <input class = "addinput" id="inputstars" type="text" placeholder="stars separated by ','">
+                <span id ="w5"></span>
+            </div>
+
+            <div>
+                <span class = "element">Score:</span>
+                <input id="inputscore" class = "addinput" type="text" placeholder=" score (1-10)">
+                <span id ="w6"></span>
+            </div>
+
+            <div>
+                <span class = "element">Genres:</span>
+                <input id="inputgenres" class = "addinput" type="text" placeholder="genres separated by ','">
+                <span id ="w7"></span>
+            </div>
+
+            <div>
+                <span class = "element">Summary:</span><br>
+                <span class = "element"></span>
+                <textarea id="inputsum" class = "addinput" type="text" placeholder="Summary..." cols="40" rows="5"></textarea>
+                <span id ="w8"></span>
+            </div>
+
+            <button id = "addsubmit">Submit</button>
+        </div>
+    </div>
+
+
+</div>
+
+
+{% endblock %}

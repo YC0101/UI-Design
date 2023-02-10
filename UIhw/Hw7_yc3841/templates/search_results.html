@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script type="text/javascript" src="{{ url_for('static', filename = 'search.js') }}"></script>  
+
+<script>
+    let data = {{data|tojson}} 
+    console.log(data)
+    let searchkey = {{searchkey|tojson}}
+    console.log(searchkey)
+    let search_input = {{search_input|tojson}}
+    console.log(search_input)
+</script>
+
+
+<div id = "searchwarning" class = "titles"></div>
+<div id = "searchlist" class='backgroundlight'></div>
+{% endblock %}

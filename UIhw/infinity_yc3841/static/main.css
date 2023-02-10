@@ -1,0 +1,85 @@
+#CPItitle{
+    background-color: lightgray;
+    margin-left: 0px;
+    margin-right: 0px;  
+    padding-left: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 40px;
+}
+
+#warning{
+    margin-left: 0px;
+    margin-top: 18px;
+    font-size: 15px;
+    color:red;
+}
+
+#container{
+    margin-left: 0px;
+    margin-top: 18px;
+    font-size: 15px;
+}
+
+#inputclient{
+    margin-left:10px;
+    border: 1px solid #a39797;
+    width: 30%;
+}
+
+#inputreams{
+    margin-left:10px;
+    border: 1px solid #a39797;
+    width: 20%;
+}
+
+#submit{
+    margin-left:10px;
+    border-radius: 4px;
+    background-color: rgb(59, 143, 212);
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+#submit:hover{
+    border-radius: 4px;
+    background-color: rgb(28, 75, 114);
+    color: white;
+}
+
+#updates{
+    margin-left: 10px;
+    margin-top: 18px;
+    font-size: 15px;
+    
+}
+
+.newclient{
+    width: 30%;
+    display:inline-block;
+}
+
+.newreams{
+    width: 20%;
+    display:inline-block;
+}
+
+.user{
+    width: 17%;
+    display:inline-block;
+
+}
+
+.delete{
+    margin-left:10px;
+    border-radius: 4px;
+    background-color: rgb(255, 208, 53);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+}
+
+#delete:hover{
+    background-color: rgb(219, 168, 0);
+}

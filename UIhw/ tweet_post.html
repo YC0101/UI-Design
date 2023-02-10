@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+    
+        <style>
+            #counter{
+                margin:3px;
+                font-size: 20px;
+                color: grey;
+            }
+
+            .red{
+                color: red;
+                font-weight: bold;
+            }
+
+            button{
+                border: 1px solid black;
+                font-size: 20px;
+                margin-bottom:2px               
+            }
+
+            #inputbox{
+                border: 1px solid #0e0d0d;
+                
+            }
+
+            #container{
+                margin-left: 15px;
+                margin-top:10px;
+            }
+
+            #textsize{
+                font-size:20px;
+            }
+
+            #blank{
+                height: 30px;
+                margin-left: 15px;
+            }
+
+            .newpost{
+                margin-left: 15px;
+                margin-top:5px;
+                border: 1px solid #0e0d0d;
+            }
+
+            .name{
+                font-weight:bold;
+            }
+
+        </style>
+        <script>
+            function createPost(){
+                let new_post = $("<span class = 'newpost'>");
+                $(new_post).html("<span class = 'name'>Username </span> "+ $("#inputbox").val());
+                $("#updates").append(new_post);
+                $("#updates").append("<br>");
+
+                $("#inputbox").val("");
+                $("#counter").html("30");
+            }
+
+
+            $(document).ready(function(){
+                $("#inputbox").bind('input propertychange',function(){
+                    let maxlength = 30;
+                    let remain = maxlength - this.value.length;
+                    if(remain >= 0){
+                        $("#counter").html(""+remain+"");
+                        $("#post").removeAttr('disabled');
+                    }
+                    else{
+                        $("#counter").html("<span class='red'>"+remain+"</span>");
+                        $("#post").attr('disabled','disabled');
+                    }        
+                });
+
+                $("#post").click(function(){
+                    createPost();
+                })
+
+                
+            })
+
+
+
+        </script>
+    </head> 
+    
+    <body>
+        <div id = "container">
+            <span id="textsize">Write a tweet.</span>
+        </div>
+        <div id = "container">
+            <input id="inputbox" type="text">
+        </div>
+        <div id = "container">
+            <span id="counter">30</span>
+            <button id="post">Post a tweet</button>
+        </div>
+
+        <div id = "blank"></div>
+        
+        <div id = "container">
+            <span id="textsize">POSTS.</span>
+        </div>
+        <div id = "updates"></div>
+    </body>
+</html>

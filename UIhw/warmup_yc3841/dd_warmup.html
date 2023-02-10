@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <!-- JQuery -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!-- bootstrap same as before -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        
+        <style>
+            #ppc_label{
+                margin-left:10px;
+                padding: 20px;
+                font-size: 20px;
+                background-color: lightblue;
+                height:70px;
+                width: 180px;
+                display:inline-block;
+                text-align:center;
+                font-weight: bold;
+            }
+
+            #nonppc_label{
+                margin-left:10px;
+                padding: 20px;
+                font-size: 20px;
+                background-color: lightblue;
+                height:70px;
+                width: 180px;
+                display:inline-block;
+                text-align:center;
+                font-weight: bold;
+            }
+
+            #updateppc{
+                margin-left:10px;
+                padding: 0px;
+                font-size: 10px;
+                width: 180px;
+                display:inline-block;
+            }
+
+            #updatenonppc{
+                margin-left:10px;
+                padding: 0px;
+                font-size: 10px;
+                width: 180px;
+                display:inline-block;
+            }
+
+            #name{
+                font-size: 20px;
+                width:180px;
+                display:inline-block;
+                border: 1px solid grey;
+                cursor: move;
+                
+            }
+
+            #name:hover{
+                background-color: yellow;
+            }
+
+        </style>
+
+        <script src="dd_warmup.js">
+        </script>
+    </head>
+
+    <body>
+        <div id="nonppc_label">Non-PPC</div>
+        <div id="ppc_label">PPC</div><br>
+
+        <div id="updatenonppc"></div>
+        <div id="updateppc"></div>
+    </body>
+</html>

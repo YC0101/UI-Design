@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <!-- JQuery -->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!-- bootstrap same as before -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        
+        <style>
+            #PPCtitle{
+                background-color: lightgray;
+                margin-left: 120px;
+                margin-right: 120px;  
+                margin-bottom: 20px;
+                padding-left: 30px;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                font-size: 40px;
+            }
+
+            #col{
+                margin-left: 120px;
+            }
+
+            #ppc_label{
+                margin-left:0px;
+                float: left;
+                padding: 20px;
+                font-size: 20px;
+                background-color: lightblue;
+                height:70px;
+                width: 180px;
+                
+                text-align:center;
+                font-weight: bold;
+            }
+            
+            #ppc_label.dropped{
+                background-color: steelblue;
+            }
+
+            #nonppc_label{
+                margin-left: 0px;
+                float: left;
+                padding: 20px;
+                font-size: 20px;
+                background-color: lightblue;
+                height:70px;
+                width: 180px;               
+                text-align:center;
+                font-weight: bold;
+            }
+
+            #nonppc_label.dropped{
+                background-color: steelblue;
+            }
+
+            #updateppc{
+                margin-left:0px;
+                padding: 0px;
+                font-size: 10px;
+                width: 180px;
+                display:inline-block;
+            }
+
+            #updatenonppc{
+                margin-left:0px;
+                padding: 0px;
+                font-size: 10px;
+                width: 180px;
+                display:inline-block;
+            }
+
+            .name{
+                font-size: 20px;
+                width:180px;
+                z-index: 999;
+                border: 1px solid grey;
+                cursor: move;
+                float: left;
+            }
+
+            .name:hover{
+                background-color: yellow;
+            }
+
+            .ui-over.container1 {
+                background: rgb(94, 60, 138) !important;
+            }
+            
+            .ui-over.container2 {
+                background: rgb(94, 60, 138) !important;
+            }
+            
+        </style>
+
+        <script src="ppc.js">
+        </script>   
+
+    </head>
+
+    <body>
+        <div id="PPCtitle">Party Planning Committee</div>
+
+
+        <div id = "col">
+            <div class = "row">
+                <div class = "col-md-3">
+                    <div id="nonppc_label">Non-PPC</div>
+                    <div id="updatenonppc"></div>
+                </div>
+                <div class = "col-md-3">
+                    <div id="ppc_label">PPC</div><br>
+                    <div id="updateppc"></div> 
+                </div>
+                <div class = "col-md-6">
+                    
+                </div>
+            </div>
+        </div>
+
+        
+
+        </div>
+    </body>
+</html> 
